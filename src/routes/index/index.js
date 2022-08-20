@@ -19,7 +19,6 @@ route.get("/", async (req, res) => {
       .sort((a, b) => {
         return b.stargazers_count - a.stargazers_count;
       })
-      .randomize()
       .slice(0, 6);
 
     let data = { repos };
