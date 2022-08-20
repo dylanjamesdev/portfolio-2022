@@ -127,6 +127,7 @@
         <h1 class="display-4 mt-5">Some of my projects
           </h4>
         <div class="row mt-5 mb-5">
+          <% for (let i of repos) { %>
           <div class="col-md-4">
             <div class="blog-entry">
               <a href="#">
@@ -134,101 +135,19 @@
               </a>
               <div class="text p-4 d-block">
                 <div class="meta mb-3">
-                  <div style="color: grey">SoomTM
+                  <div style="color: grey"><%=i.language%>
                   </div>
                   <h3 class="heading">
-                    <a class="link" style="color: white" href="#">Mmmm daddy
+                    <a class="link" style="color: white" href="<%=i.url%>"><%= i.name %>
                     </a>
+                    <br />  <br /<
+                    <p class="lead text-white"><%=i.description%></p>
                   </h3>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="blog-entry">
-              <a href="#">
-                <img class="img-fluid" src="https://avatars.githubusercontent.com/u/99157898?s=400&u=f012e21f0bdfe3d999b6cbdb644342cdce76751f&v=4">
-              </a>
-              <div class="text p-4 d-block">
-                <div class="meta mb-3">
-                  <div style="color: grey">SoomTM
-                  </div>
-                  <h3 class="heading">
-                    <a class="link" style="color: white" href="#">Mmmm daddy
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog-entry">
-              <a href="#">
-                <img class="img-fluid" src="https://avatars.githubusercontent.com/u/99157898?s=400&u=f012e21f0bdfe3d999b6cbdb644342cdce76751f&v=4">
-              </a>
-              <div class="text p-4 d-block">
-                <div class="meta mb-3">
-                  <div style="color: grey">SoomTM
-                  </div>
-                  <h3 class="heading">
-                    <a class="link" style="color: white" href="#">Mmmm daddy
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog-entry">
-              <a href="#">
-                <img class="img-fluid" src="https://avatars.githubusercontent.com/u/99157898?s=400&u=f012e21f0bdfe3d999b6cbdb644342cdce76751f&v=4">
-              </a>
-              <div class="text p-4 d-block">
-                <div class="meta mb-3">
-                  <div style="color: grey">SoomTM
-                  </div>
-                  <h3 class="heading">
-                    <a class="link" style="color: white" href="#">Mmmm daddy
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog-entry">
-              <a href="#">
-                <img class="img-fluid" src="https://avatars.githubusercontent.com/u/99157898?s=400&u=f012e21f0bdfe3d999b6cbdb644342cdce76751f&v=4">
-              </a>
-              <div class="text p-4 d-block">
-                <div class="meta mb-3">
-                  <div style="color: grey">SoomTM
-                  </div>
-                  <h3 class="heading">
-                    <a class="link" style="color: white" href="#">Mmmm daddy
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="blog-entry">
-              <a href="#">
-                <img class="img-fluid" src="https://avatars.githubusercontent.com/u/99157898?s=400&u=f012e21f0bdfe3d999b6cbdb644342cdce76751f&v=4">
-              </a>
-              <div class="text p-4 d-block">
-                <div class="meta mb-3">
-                  <div style="color: grey">SoomTM
-                  </div>
-                  <h3 class="heading">
-                    <a class="link" style="color: white" href="#">Mmmm daddy
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
+        <% } %>
           </section>
         <section class="interests pt-5 pb-5">
           <h1 class="display-4">Ah, the widgets
@@ -249,10 +168,7 @@
             </codersrank-skills-chart>
             <br />
             <br />
-            <figure><embed src="https://wakatime.com/share/@dylanjamesdev/01ca6fd3-dfbd-4cc6-82c9-934c3c2c22ba.svg"></embed></figure>
-            <br />
-            <br />
-            <figure><embed src="https://wakatime.com/share/@dylanjamesdev/129a69a3-bebd-4510-abef-aa9e4daea4d2.svg"></embed></figure>
+            <figure><embed src="https://wakatime.com/share/@dylanjamesdev/9fb90fd2-9600-4e31-8042-299bd6e2f7ae.svg"></embed></figure>
           </div>
         </section>
         <section id="contact">
