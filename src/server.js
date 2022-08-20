@@ -1,31 +1,21 @@
-  "use strict";
-  
-  const express = require("express");
+"use strict";
 
-  let app = express();
-  let port = 80;
+const express = require("express");
+const router = require("./routes/router");
+const config = require("../config");
 
-  app.use(express.static("public"));
-  app.use(express.json());
-  app.use(express.urlencoded({ extended: true }));
-  
-  app.disable("x-powered-by");
-  app.set("view engine", "ejs");
-  app.set("views", "./views");
-  app.set("daddy", "dylan");
+let app = express();
 
-  app.get("/", (req, res) => {
-   return res.render("index");
-  });
+app.use(express.static("public"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-  app.get("/webmaster", (req, res) => {
-    return res.render("webmaster");
-  });
+app.disable("x-powered-by");
+app.set("view engine", "ejs");
+app.set("views", "./views");
 
-  app.get("*", (req, res) => {
-    return res.end();
-  });
+app.use("/", router);
 
-  app.listen(port, () => {
-    console.log(`[Portfolio] Server is running on port ${port}.`);
-  });
+app.listen(config.port, () => {
+  console.log(`[Portfolio] Server is running on port ${config.port}.`);
+});
