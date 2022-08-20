@@ -27,17 +27,17 @@ route.get("/", async (req, res) => {
       {
         name: "Fetch Error",
         description:
-          "An error has occurred while fetching the data. Please try again later.",
+          "A temporary api error has occurred while attempting to fetch the data. Please try again later.",
       },
       {
         name: "Fetch Error",
         description:
-          "An error has occurred while fetching the data. Please try again later.",
+          "A temporary api error has occurred while attempting to fetch the data. Please try again later.",
       },
       {
         name: "Fetch Error",
         description:
-          "An error has occurred while fetching the data. Please try again later.",
+          "A temporary api error has occurred while attempting to fetch the data. Please try again later.",
       },
     ];
 
