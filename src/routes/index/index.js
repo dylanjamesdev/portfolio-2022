@@ -17,7 +17,7 @@ route.get("/", async (req, res) => {
 
     let repos = all_repos
       .sort((a, b) => {
-        return b.stargazers_count - a.stargazers_count;
+        return new Date(b.created_at) - new Date(a.created_at);
       })
       .slice(0, 6);
 
