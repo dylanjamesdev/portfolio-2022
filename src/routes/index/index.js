@@ -9,14 +9,13 @@ route.get("/", async (req, res) => {
       "https://api.github.com/orgs/team-tritan/repos"
     );
 
-    let user_repos = await axios.get(
-      "https://api.github.com/users/dylanjamesdev/repos"
-    );
+    // let user_repos = await axios.get(
+    //   "https://api.github.com/users/dylanjamesdev/repos"
+    // );
 
-    let all_repos = org_repos.data.concat(user_repos.data);
-    console.log(all_repos);
+    // let all_repos = org_repos.data.concat(user_repos.data);
 
-    let repos = all_repos
+    let repos = org_repos
       .sort((a, b) => {
         return b.stargazers_count - a.stargazers_count;
       })
