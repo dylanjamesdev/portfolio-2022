@@ -16,7 +16,6 @@ route.get("/", async (req, res) => {
     let all_repos = org_repos.data.concat(user_repos.data);
 
     let repos = all_repos
-      .filter((repo) => !repo.fork)
       .sort((a, b) => b.stargazers_count - a.stargazers_count)
       .slice(0, 6);
 

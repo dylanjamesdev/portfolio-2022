@@ -130,7 +130,7 @@
           <% for (let i of repos) { %>
           <div class="col-md-4">
             <div class="blog-entry">
-              <a href="#">
+              <a href="<%=i.html_url%>">
                 <img class="img-fluid" src="https://avatars.githubusercontent.com/u/99157898?s=400&u=f012e21f0bdfe3d999b6cbdb644342cdce76751f&v=4">
               </a>
               <div class="text p-4 d-block">
@@ -138,7 +138,7 @@
                   <div style="color: grey"><%=i.language%>
                   </div>
                   <h3 class="heading">
-                    <a class="link" style="color: white" href="<%=i.url%>"><%= i.name %>
+                    <a class="link" style="color: white" href="<%=i.html_url%>"><%= i.name %>
                     </a>
                     <br />  <br /<
                     <p class="lead text-white"><%=i.description%></p>
