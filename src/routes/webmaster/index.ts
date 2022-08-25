@@ -8,4 +8,5 @@ route.get("/", (_req: Request, res: Response) => {
   return res.render("webmaster");
 });
 
-export default Router;
+export default route;
+

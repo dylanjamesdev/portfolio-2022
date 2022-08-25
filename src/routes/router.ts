@@ -1,5 +1,3 @@
-"use strict";
-
 import { Router, Request, Response } from "express";
 import config from "../../config";
 
@@ -23,4 +21,4 @@ route.get("/:slug", (req: Request, res: Response) => {
   });
 });
 
-export default Router;
+export default route;

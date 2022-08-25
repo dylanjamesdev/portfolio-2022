@@ -1,5 +1,3 @@
-"use strict";
-
 import express from "express";
 import router from "./routes/router";
 import config from "../config";
