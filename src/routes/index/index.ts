@@ -1,5 +1,3 @@
-"use strict";
-
 import { Router, Request, Response } from "express";
 
 let route = Router();

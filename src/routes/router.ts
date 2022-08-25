@@ -3,11 +3,13 @@ import config from "../../config";
 
 import index from "./index";
 import webmaster from "./webmaster";
+import words from "./words";
 
 let route = Router();
 
 route.use("/", index);
 route.use("/webmaster", webmaster);
+route.use("/words", words);
 
 route.get("/:slug", (req: Request, res: Response) => {
   for (let i = 0; i < config.redirects.length; i++) {
