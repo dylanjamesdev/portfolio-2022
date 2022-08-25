@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dylan James - Software Engineer</title>
+    <title>Dylan James - Software Engineer
+    </title>
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -26,175 +27,193 @@
       background-color: rgb(71, 71, 172);
     }
   </style>
-  
-<%- include("./partials/navbar") %>
-
-  <body style="background-color: black">
-    <div class="container">
-      <section class="landing">
-        <div class="row vertical-center" id='landing'>
-          <div class="col-lg-8 text-left pb-5">
-
-            <div class="animate__animated animate__fadeInUp alert alert" style="background-color: rgb(71, 71, 172); color: white" role="alert">
-             If you read anything from my site, I suggest <u><a href='webmaster' style="color: white">starting here</a></u>.
+  <%- include("./partials/navbar") %>
+    <body style="background-color: black">
+      <div class="container">
+        <section class="landing">
+          <div class="row vertical-center" id='landing'>
+            <div class="col-lg-8 text-left pb-5">
+              <div class="animate__animated animate__fadeInUp alert alert" style="background-color: rgb(71, 71, 172); color: white" role="alert">
+                If you read anything from my site, I suggest 
+                <u>
+                  <a href='webmaster' style="color: white">starting here
+                  </a>
+                </u>.
+              </div>
+              <h1 class="animate__animated animate__backInUp display-1">Dylan 
+                <span style="color: rgb(71, 71, 172)">James
+                </span>
+              </h1>
+              <p class="animate__animated animate__backInUp lead pl-2 text-white">Developer, SysAdmin, Mega Cock
+              </p>
+              <br />
+              <img class='animate__animated animate__backInUp' style='text-align: center;' src='https://spotify-recently-played-readme.vercel.app/api?user=c36ygm5hg7d35z2e445a4ig7u&count=4' />
             </div>
-
-            <h1 class="animate__animated animate__backInUp display-1">Dylan 
-              <span style="color: rgb(71, 71, 172)">James
-              </span>
-            </h1>
-            <p class="animate__animated animate__backInUp lead pl-2 text-white">Developer, SysAdmin, Mega Cock
-            </p>
-            <br />
-            <img class='animate__animated animate__backInUp' style='text-align: center;' src='https://spotify-recently-played-readme.vercel.app/api?user=c36ygm5hg7d35z2e445a4ig7u&count=4' />
-          </div>
-          <div class="animate__animated animate__fadeInUp col-lg-4 text-center my-auto pb-5 rounded-circle">
-            <img class="img-fluid rounded-circle"
-                 src="/images/avatar.jpg">
-          </div>
-        </div>
-      </section>
-      <section class="animate__animated animate__backInUp mt-5 mb-5">
-        <h4 class="display-4">A little about me,
-        </h4>
-        <div class="row">
-          <div class="col-lg-6 wrap text-left">
-            <div class="about-desc">
-              <div class="pt-5">
-                <h2 class="mb-5 ">Hello!
-                </h2>
-                <p class="text-white">My name is Dylan, I go by Dylan James or neurotypical around here. I've been playing with the internet for all of my life, I especially enjoyed the era of the webmaster 
-                  <a href='/webmaster'>(reference here)</a>. 
-                  <br/>
-                  <br />
-                  I've done alot of open source projects, but as of now I'm the owner of 
-                  <a href="https://github.com/team-tritan">Team Tritan</a> and 
-                  <a href='https://github.com/dylanjamesdev/tritan-bot'>Tritan Bot</a>. Developer at 
-                  <a href='https://windy.pink'>Windy Pink</a>. Project Manager at 
-                  <a href='https://github.com/orgs/DefinityTeam'>Definity</a>. 
-                  <br/ >
-                  <br />
-                  I specifically enjoy backend nodejs development, but I'm also a huge fan of building frontend applications.
-                  <br />
-                  <br />
-                </p>
-              </div>
+            <div class="animate__animated animate__fadeInUp col-lg-4 text-center my-auto pb-5 rounded-circle">
+              <img class="img-fluid rounded-circle"
+                   src="/images/avatar.jpg">
             </div>
-          </div>
-          <div class="animate__animated animate__backInUp col-lg-6 wrap align-content-center">
-            <div class="row mt-5 flex-column">
-              <div class="col-md-8">
-                <h2 class="mb-4">Things I do
-                </h2>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="progress-wrap">
-                  <h5>Backend Engineering
-                  </h5>
-                  <div class="progress progress-style">
-                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-                         aria-valuemin="0" aria-valuemax="100" style="width:85%; background-color: rgb(71, 71, 172);">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="progress-wrap">
-                  <h5>Frontend Development
-                  </h5>
-                  <div class="progress progress-style">
-                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-                         aria-valuemin="0" aria-valuemax="100" style="width:75%; background-color: rgb(71, 71, 172);">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mt-3">
-                <div class="progress-wrap">
-                  <h5>Bot Development
-                  </h5>
-                  <div class="progress progress-style">
-                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
-                         aria-valuemin="0" aria-valuemax="100" style="width:95%; background-color: rgb(71, 71, 172);">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="animate__animated animate__backInUp">
-        <h1 class="display-4 mt-5">Some of my projects
-          </h4>
-        <p class="lead pl-2 text-white">These are fetched from the Github API and are not featured purposefully.</p>
-        <div class="row mt-5 mb-5">
-          <% for (let i of repos) { %>
-          <div class="col-md-4">
-            <div class="blog-entry">
-              <a href="<%=i.html_url%>">
-                <img class="img-fluid" src="https://avatars.githubusercontent.com/u/99157898?s=400&u=f012e21f0bdfe3d999b6cbdb644342cdce76751f&v=4">
-              </a>
-              <div class="text p-4 d-block">
-                <div class="meta mb-3">
-                  <div style="color: grey"><%=i.language%>
-                  </div>
-                  <h3 class="heading">
-                    <a class="link" style="color: white" href="<%=i.html_url%>"><%= i.name %>
-                    </a>
-                    <br />  <br /<
-                    <p class="lead text-white"><%=i.description%></p>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        <% } %>
-          </section>
-        <section class="animate__animated animate__backInUp interests pt-5 pb-5">
-          <h1 class="display-4">Ah, the widgets
-          </h1>
-          <p class="lead pl-2 text-white">This site couldn't be completed without some widgets.
-          </p>
-          <br />
-          <div class="col-lg-8 pb-5">
-            <img style='width: 100%' src="https://metrics.lecoq.io/dylanjamesdev?template=classic&repositories.forks=true&repositories.affiliations=member&languages=1&habits=1&followup=1&people=1&stargazers=1&activity=1&code=1&lines=1&introduction=1&wakatime=1&traffic=1&stars=1&music=1&skyline=1&languages.limit=8&languages.threshold=0%25&languages.colors=github&languages.sections=most-used&languages.indepth=false&languages.analysis.timeout=15&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&stars.limit=4&habits.from=200&habits.days=14&habits.facts=true&habits.charts=true&habits.trim=false&followup.sections=repositories&followup.indepth=true&people.limit=24&people.identicons=false&people.size=28&people.types=followers%2C%20following&people.shuffle=false&stargazers.charts.type=classic&code.lines=12&code.load=100&code.days=3&code.visibility=public&activity.limit=5&activity.load=300&activity.days=14&activity.visibility=all&activity.timestamps=false&activity.filter=all&introduction.title=true&skyline.year=current-year&skyline.frames=60&skyline.quality=0.5&skyline.compatibility=false&music.provider=spotify&music.playlist=https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F2ScWfoPJjsIfsw4LBE64t8%3Fsi%3D3f921b95a6734233&music.limit=4&music.played.at=true&music.time.range=short&music.top.type=tracks&music.user=.user.login&wakatime.days=7&wakatime.sections=time%2C%20projects%2C%20projects-graphs%2C%20languages%2C%20languages-graphs%2C%20editors%2C%20os&wakatime.limit=5&wakatime.url=https%3A%2F%2Fwakatime.com&wakatime.user=dylanjamesdev&config.timezone=America%2FNew_York"  />
-            <br />
-            <br />
-            <codersrank-skills-chart
-                                     username="dylanjamesdev"
-                                     labels
-                                     legend
-                                     tooltip
-                                     >
-            </codersrank-skills-chart>
-            <br />
-            <br />
-            <figure><embed src="https://wakatime.com/share/@dylanjamesdev/9fb90fd2-9600-4e31-8042-299bd6e2f7ae.svg"></embed></figure>
           </div>
         </section>
-        <section class="animate__animated animate__backInUp" id="contact">
-          <h1 class="display-4 mt-5">Like what you see?
-          </h1>
-          <div class="text-left">
-            <div class="pt-3">
-              <p class="lead pl-2 text-white">Feel free to reach out, I might answer if you're lucky enough!</p>
-                <br />
-                <br />
-                <a class="btn btn-primary btn-mg" style="background-color: transparent; border-color: rgb(71, 71, 172);" href="https://discord.gg/http">Join Discord
-                </a>
-                <a class="btn btn-primary btn-mg" style="background-color: transparent; border-color: rgb(71, 71, 172);" href="mailto:webmaster@tritan.gg">Email Me
-                </a>
+        <section class="animate__animated animate__backInUp mt-5 mb-5">
+          <h4 class="display-4">A little about me,
+          </h4>
+          <div class="row">
+            <div class="col-lg-6 wrap text-left">
+              <div class="about-desc">
+                <div class="pt-5">
+                  <h2 class="mb-5 ">Hello!
+                  </h2>
+                  <p class="text-white">My name is Dylan, I go by Dylan James or neurotypical around here. I've been playing with the internet for all of my life, I especially enjoyed the era of the webmaster 
+                    <a href='/webmaster'>(reference here)
+                    </a>. 
+                    <br/>
+                    <br />
+                    I've done alot of open source projects, but as of now I'm the owner of 
+                    <a href="https://github.com/team-tritan">Team Tritan
+                    </a> and 
+                    <a href='https://github.com/dylanjamesdev/tritan-bot'>Tritan Bot
+                    </a>. Developer at 
+                    <a href='https://windy.pink'>Windy Pink
+                    </a>. Project Manager at 
+                    <a href='https://github.com/orgs/DefinityTeam'>Definity
+                    </a>. 
+                    <br/ >
+                    <br />
+                    I specifically enjoy backend nodejs development, but I'm also a huge fan of building frontend applications.
+                    <br />
+                    <br />
+                  </p>
                 </div>
+              </div>
             </div>
-            <div class="mt-5 mb-5 text-center">
-              <h6>Developed, hosted, and maintained by <a style="color: rgb(71, 71, 172)" href='https://github.com/dylanjamesdev'>Dylan James</a>.</h6>
+            <div class="animate__animated animate__backInUp col-lg-6 wrap align-content-center">
+              <div class="row mt-5 flex-column">
+                <div class="col-md-8">
+                  <h2 class="mb-4">Things I do
+                  </h2>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="progress-wrap">
+                    <h5>Backend Engineering
+                    </h5>
+                    <div class="progress progress-style">
+                      <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
+                           aria-valuemin="0" aria-valuemax="100" style="width:85%; background-color: rgb(71, 71, 172);">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="progress-wrap">
+                    <h5>Frontend Development
+                    </h5>
+                    <div class="progress progress-style">
+                      <div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+                           aria-valuemin="0" aria-valuemax="100" style="width:75%; background-color: rgb(71, 71, 172);">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                  <div class="progress-wrap">
+                    <h5>Bot Development
+                    </h5>
+                    <div class="progress progress-style">
+                      <div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
+                           aria-valuemin="0" aria-valuemax="100" style="width:95%; background-color: rgb(71, 71, 172);">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            </section>
           </div>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous">
-        </script>
-        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js">
-        </script>
-        </body>
-      </html>
+        </section>
+        <section class="animate__animated animate__backInUp">
+          <h1 class="display-4 mt-5">Some of my projects
+            </h4>
+          <p class="lead pl-2 text-white">These are fetched from the Github API and are not featured purposefully.
+          </p>
+          <div class="row mt-5 mb-5">
+            <% for (let i of repos) { %>
+              <div class="col-md-4">
+                <div class="blog-entry">
+                  <a href="<%=i.html_url%>">
+                    <img class="img-fluid" src="https://avatars.githubusercontent.com/u/99157898?s=400&u=f012e21f0bdfe3d999b6cbdb644342cdce76751f&v=4">
+                  </a>
+                  <div class="text p-4 d-block">
+                    <div class="meta mb-3">
+                      <div style="color: grey">
+                        <%=i.language%>
+                          </div>
+                        <h3 class="heading">
+                          <a class="link" style="color: white" href="<%=i.html_url%>">
+                            <%= i.name %>
+                              </a>
+                            <br />  
+                            <br />
+                            <p class="lead text-white">
+                              <%=i.description%>
+                                </p>
+                            </h3>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <% } %>
+                    </section>
+                  <section class="animate__animated animate__backInUp interests pt-5 pb-5">
+                    <h1 class="display-4">Ah, the widgets
+                    </h1>
+                    <p class="lead pl-2 text-white">This site couldn't be completed without some widgets.
+                    </p>
+                    <br />
+                    <div class="col-lg-8 pb-5">
+                      <img style='width: 100%' src="https://metrics.lecoq.io/dylanjamesdev?template=classic&repositories.forks=true&repositories.affiliations=member&languages=1&habits=1&followup=1&people=1&stargazers=1&activity=1&code=1&lines=1&introduction=1&wakatime=1&traffic=1&stars=1&music=1&skyline=1&languages.limit=8&languages.threshold=0%25&languages.colors=github&languages.sections=most-used&languages.indepth=false&languages.analysis.timeout=15&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&stars.limit=4&habits.from=200&habits.days=14&habits.facts=true&habits.charts=true&habits.trim=false&followup.sections=repositories&followup.indepth=true&people.limit=24&people.identicons=false&people.size=28&people.types=followers%2C%20following&people.shuffle=false&stargazers.charts.type=classic&code.lines=12&code.load=100&code.days=3&code.visibility=public&activity.limit=5&activity.load=300&activity.days=14&activity.visibility=all&activity.timestamps=false&activity.filter=all&introduction.title=true&skyline.year=current-year&skyline.frames=60&skyline.quality=0.5&skyline.compatibility=false&music.provider=spotify&music.playlist=https%3A%2F%2Fopen.spotify.com%2Fplaylist%2F2ScWfoPJjsIfsw4LBE64t8%3Fsi%3D3f921b95a6734233&music.limit=4&music.played.at=true&music.time.range=short&music.top.type=tracks&music.user=.user.login&wakatime.days=7&wakatime.sections=time%2C%20projects%2C%20projects-graphs%2C%20languages%2C%20languages-graphs%2C%20editors%2C%20os&wakatime.limit=5&wakatime.url=https%3A%2F%2Fwakatime.com&wakatime.user=dylanjamesdev&config.timezone=America%2FNew_York"  />
+                      <br />
+                      <br />
+                      <codersrank-skills-chart
+                                               username="dylanjamesdev"
+                                               labels
+                                               legend
+                                               tooltip
+                                               >
+                      </codersrank-skills-chart>
+                      <br />
+                      <br />
+                      <figure>
+                        <embed src="https://wakatime.com/share/@dylanjamesdev/9fb90fd2-9600-4e31-8042-299bd6e2f7ae.svg">
+                        </embed>
+                      </figure>
+                    </div>
+                  </section>
+                <section class="animate__animated animate__backInUp" id="contact">
+                  <h1 class="display-4 mt-5">Like what you see?
+                  </h1>
+                  <div class="text-left">
+                    <div class="pt-3">
+                      <p class="lead pl-2 text-white">Feel free to reach out, I might answer if you're lucky enough!
+                      </p>
+                      <br />
+                      <br />
+                      <a class="btn btn-primary btn-mg" style="background-color: transparent; border-color: rgb(71, 71, 172);" href="https://discord.gg/http">Join Discord
+                      </a>
+                      <a class="btn btn-primary btn-mg" style="background-color: transparent; border-color: rgb(71, 71, 172);" href="mailto:webmaster@tritan.gg">Email Me
+                      </a>
+                    </div>
+                  </div>
+                  <div class="mt-5 mb-5 text-center">
+                    <h6>Developed, hosted, and maintained by 
+                      <a style="color: rgb(71, 71, 172)" href='https://github.com/dylanjamesdev'>Dylan James
+                      </a>.
+                    </h6>
+                  </div>
+                </section>
+              </div>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous">
+              </script>
+              <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js">
+              </script>
+              </body>
+            </html>
