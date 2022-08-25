@@ -9,11 +9,11 @@ const config = {
     },
     {
       slug: "webmaster",
-      url: "https://dylanjames.gay/rants/webmaster",
+      url: "/rants/webmaster",
     },
     {
       slug: "words",
-      url: "https://dylanjames.gay/rants/words",
+      url: "/rants/words",
     },
   ],
 };
