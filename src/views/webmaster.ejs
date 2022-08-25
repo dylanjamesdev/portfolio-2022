@@ -33,18 +33,9 @@
         padding: 14px 16px;
         text-decoration: none;
       }
-      .active {
-        background-color: rgb(71, 71, 172);
-      }
     </style>
-    <nav class="nav">
-      <ul>
-        <li style="float: right">
-          <a class="active" href="/">Home</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="container">
+    <%- include("./partials/navbar") %>
+    <div class="animate__animated animate__fadeInUp container">
       <section class="landing">
         <div class="row vertical-center" id="landing">
           <div class="col-lg-8 text-left pb-5">
@@ -59,7 +50,7 @@
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section class="animate__animated animate__fadeInUp" id="contact">
         <div class="text-left">
           <div class="pt-3">
             <p>

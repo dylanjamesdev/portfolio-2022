@@ -1,9 +1,11 @@
 "use strict";
 
-let route = require("express").Router();
+import { Router, Request, Response } from "express";
+
+let route = Router();
 let axios = require("axios");
 
-route.get("/", async (req, res) => {
+route.get("/", async (_req: Request, res: Response) => {
   try {
     let org_repos = await axios.get(
       "https://api.github.com/orgs/team-tritan/repos"
@@ -16,8 +18,9 @@ route.get("/", async (req, res) => {
     let all_repos = org_repos.data.concat(user_repos.data);
 
     let repos = all_repos
-      .sort((a, b) => b.stargazers_count - a.stargazers_count)
-      .slice(0, 6);
+      .sort((a, b) => b.size - a.size)
+      .filter((i) => !i.fork)
+      .slice(0, 15);
 
     let data = { repos };
 
@@ -47,4 +50,4 @@ route.get("/", async (req, res) => {
   }
 });
 
-module.exports = route;
+export default route;

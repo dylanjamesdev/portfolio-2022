@@ -1,10 +1,8 @@
-"use strict";
+import express from "express";
+import router from "./routes/router";
+import config from "../config";
 
-const express = require("express");
-const router = require("./routes/router");
-const config = require("../config");
-
-let app = express();
+const app: express.Application = express();
 
 app.use(express.static("public"));
 app.use(express.json());
