@@ -2,14 +2,14 @@ import { Router, Request, Response } from "express";
 import config from "../../config";
 
 import index from "./index";
-import webmaster from "./webmaster";
-import words from "./words";
+import webmaster from "./rants/webmaster";
+import words from "./rants/words";
 
 let route = Router();
 
 route.use("/", index);
-route.use("/webmaster", webmaster);
-route.use("/words", words);
+route.use("/rants/webmaster", webmaster);
+route.use("/rants/words", words);
 
 route.get("/:slug", (req: Request, res: Response) => {
   for (let i = 0; i < config.redirects.length; i++) {

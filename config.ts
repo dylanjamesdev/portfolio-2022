@@ -7,6 +7,14 @@ const config = {
       slug: "codersrank",
       url: "https://profile.codersrank.io/user/dylanjamesdev",
     },
+    {
+      slug: "webmaster",
+      url: "https://dylanjames.gay/rants/webmaster",
+    },
+    {
+      slug: "words",
+      url: "https://dylanjames.gay/rants/words",
+    },
   ],
 };
 
