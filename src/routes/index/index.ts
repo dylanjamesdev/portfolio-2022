@@ -18,8 +18,9 @@ route.get("/", async (_req: Request, res: Response) => {
     let all_repos = org_repos.data.concat(user_repos.data);
 
     let repos = all_repos
-      .sort((a, b) => b.stargazers_count - a.stargazers_count)
-      .slice(0, 6);
+      .sort((a, b) => b.size - a.size)
+      .filter((i) => !i.fork)
+      .slice(0, 15);
 
     let data = { repos };
 
@@ -49,4 +50,4 @@ route.get("/", async (_req: Request, res: Response) => {
   }
 });
 
-export default Router;
+export default route;
