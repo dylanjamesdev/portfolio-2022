@@ -18,7 +18,7 @@ route.get("/", async (_req: Request, res: Response) => {
     let repos = all_repos
       .sort((a, b) => b.size - a.size)
       .filter((i) => !i.fork)
-      .slice(0, 15);
+      .slice(0, 9);
 
     let data = { repos };
 

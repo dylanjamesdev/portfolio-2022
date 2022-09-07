@@ -1,5 +1,5 @@
 const config = {
-  port: 80,
+  port: 8080,
   redirects: [
     { slug: "discord", url: "https://discord.gg/http" },
     { slug: "github", url: "https://github.com/dylanjamesdev" },
