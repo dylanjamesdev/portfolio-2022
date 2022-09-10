@@ -53,6 +53,22 @@ A:hover {
   font-weight: none;
 }
 
+P {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+H1 {
+  color: white;
+}
+
+blockquote {
+  color: white;
+}
+
 .base-color {
   color: rgb(71, 71, 172);
 }
