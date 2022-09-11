@@ -14,9 +14,9 @@ route.post("/", async(req: Request, res: Response) => {
         var d = new Date();
         let date = d.toString();
 
-        if (!commentText) return res.json({
+        if (!commentText || !page) return res.json({
             code: 500,
-            message: "No comment provided in post."
+            message: "No comment or page provided in posted request."
         });
 
         let commentsFile = fs.readFileSync("./data/constants.json");
