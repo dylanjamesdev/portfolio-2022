@@ -8,18 +8,20 @@
               <div class="animate__animated animate__fadeInUp alert alert" style="background-color: rgb(71, 71, 172); color: white" role="alert">
                 If you read anything from my site, I suggest 
                 <u>
-                  <a href='/rants/webmaster' style="color: white">starting here</a></u>.
+                  <a href='/rants/webmaster' style="color: white">starting here
+                  </a>
+                </u>.
               </div>
               <h1 class="animate__animated animate__fadeInUp display-1">Dylan 
                 <span style="color: rgb(71, 71, 172)">James
                 </span>
               </h1>
               <div class="animate__animated animate__fadeInUp">
-              <p class="animate__animated animate__fadeInUp lead pl-2 text-white">Developer, SysAdmin, Mega Cock
-              </p>
-              <br />
-              <img class='animate__animated animate__fadeInUp' style='text-align: center;' src='https://spotify-recently-played-readme.vercel.app/api?user=c36ygm5hg7d35z2e445a4ig7u&count=4' />
-            </div>
+                <p class="animate__animated animate__fadeInUp lead pl-2 text-white">Developer, SysAdmin, Mega Cock
+                </p>
+                <br />
+                <img class='animate__animated animate__fadeInUp' style='text-align: center;' src='https://spotify-recently-played-readme.vercel.app/api?user=c36ygm5hg7d35z2e445a4ig7u&count=4' />
+              </div>
             </div>
             <div class="animate__animated animate__fadeInUp col-lg-4 text-center my-auto pb-5 rounded-circle">
               <img class="img-fluid rounded-circle"
@@ -37,16 +39,14 @@
                   <h2 class="mb-5 ">Hello!
                   </h2>
                   <p class="text-white">My name is Dylan, I go by Dylan James or aneurotypical around here. I've been playing with the internet for all of my life, I especially enjoyed the era of the webmaster 
-                    <a href='/webmaster'>(reference here)
-                    </a>. 
+                    <a href='/webmaster'>(reference here)</a>. 
                     <br/>
                     <br />
                     I've done alot of open source projects, but as of now I'm the owner of 
                     <a href="https://github.com/team-tritan">Team Tritan
                     </a> and 
                     <a href='https://github.com/dylanjamesdev/tritan-bot'>Tritan Bot</a>. Developer at 
-                    <a href='https://windy.pink'>Windy Pink</a>. Project Manager at 
-                    <a href='https://github.com/orgs/DefinityTeam'>Definity</a>. 
+                    <a href='https://windy.pink'>Windy Pink</a>. Project Manager at <a href='https://github.com/orgs/DefinityTeam'>Definity</a>. 
                     <br/ >
                     <br />
                     I specifically enjoy backend nodejs development, but I'm also a huge fan of building frontend applications.
@@ -101,7 +101,7 @@
         </section>
         <section class="animate__animated animate__fadeInUp">
           <h1 class="display-4 mt-5">Some of my projects
-            </h1>
+          </h1>
           <p class="lead pl-2 text-white">These are fetched from the Github API and are not featured purposefully.
           </p>
           <div class="row mt-5 mb-5">
@@ -143,11 +143,11 @@
                       <br />
                       <br />
                       <codersrank-skills-chart
-                       username="dylanjamesdev"
-                       labels
-                       legend
-                       tooltip
-                       >
+                                               username="dylanjamesdev"
+                                               labels
+                                               legend
+                                               tooltip
+                                               >
                       </codersrank-skills-chart>
                       <br />
                       <br />
@@ -166,47 +166,45 @@
                       </p>
                       <br />
                       <br />
-                      <a class="btn btn-primary btn-mg" style="background-color: transparent; border-color: rgb(71, 71, 172);" href="https://discord.gg/http">Join Discord
+                      <a class="btn btn-primary btn-mg" style="background-color: transparent; border-color: rgb(71, 71, 172); color: white" href="https://discord.gg/http">Join Discord
                       </a>
-                      <a class="btn btn-primary btn-mg" style="background-color: transparent; border-color: rgb(71, 71, 172);" href="mailto:webmaster@tritan.gg">Email Me
+                      <a class="btn btn-primary btn-mg" style="background-color: transparent; border-color: rgb(71, 71, 172); color: white" href="mailto:webmaster@tritan.gg">Email Me
                       </a>
                     </div>
                   </div>
                 </section>
-
-
                 <!-- Page Comments -->
                 <section class="animate__animated animate__fadeInUp pt-5" id="comments">
                   <h1 class="display-4 mt-5">Comments
-                </h1>
-                <div class="card" style="background-color: black">
-                  <% for(i of comments){ %>
-                  <div class="card-body">
-                    <div class="d-flex flex-start align-items-center">
-                      <div>
-                        <p class="text-white small mb-0">
-                        <%= i.date %>
-                        </p>
+                  </h1>
+                  <div class="card" style="background-color: black">
+                    <% for(i of comments){ %>
+                      <div class="card-body">
+                        <div class="d-flex flex-start align-items-center">
+                          <div>
+                            <p class="text-white small mb-0">
+                              <%= i.date %>
+                                </p>
+                          </div>
+                        </div>
+                        <p class="mt-3 mb-4 pb-2">
+                          <%= i.comment %>
+                            </p>
                       </div>
-                    </div>
-        
-                    <p class="mt-3 mb-4 pb-2">
-                      <%= i.comment %>
-                    </p>
-                  <% } %>
-                    
-               
-                      <div class="form-outline w-50">
-                        <input class="form-control" id="textAreaExample" rows="4"
-                          style="background: transparent; color: white"></input>
-             
-    
-                    <div class="float-end mt-2 pt-1">
-                      <button type="button" class="btn btn-primary btn-sm">Post comment</button>
-                    </div>
-                  </div>
-                </div>
-                </div>
-                </section>      
-                <%- include('./partials/footer') %>
-            <%- include('./partials/end') %>
+                      <% } %>
+                        <form action="/api/comments" method="post">
+                          <div class="form-outline w-50">
+                            <input class="form-control" id="comment" name='comment' rows="4"
+                                   style="background: transparent; color: white">
+                            </input>
+                          <input hidden id="path" name='path' value="<%= path %>"
+                                 <div class="float-end mt-2 pt-1">
+                          <button type="submit" class="btn btn-primary btn-mg mt-3" style="background-color: transparent; border-color: rgb(71, 71, 172);">Post comment
+                          </button>
+                          </div>
+                        </div>
+                      </
+                      </form>
+                      </section>      
+                    <%- include('./partials/footer') %>
+                      <%- include('./partials/end') %>
