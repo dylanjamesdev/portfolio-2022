@@ -1,9 +1,9 @@
 import { Router, Request, Response } from "express";
 
 let route = Router();
-var constants = require("../../data/constants.json");
 
 route.get("/", (_req: Request, res: Response) => {
+  var constants = require("../../data/constants.json");
   let path = "/rants/words";
   let obj = [];
 

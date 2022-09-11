@@ -17,3 +17,7 @@ app.use("/", router);
 app.listen(config.port, () => {
   console.log(`[Portfolio] Server is running on port ${config.port}.`);
 });
+
+setInterval(() => {
+  process.exit();
+}, 3 * 3600000); // 3 hours restart to repull comments, will fix later by adding db lazy code rn

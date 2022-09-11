@@ -2,9 +2,9 @@ import { Router, Request, Response } from "express";
 import axios from "axios";
 
 let route = Router();
-var constants = require("../../data/constants.json");
 
 route.get("/", async (_req: Request, res: Response) => {
+  var constants = require("../../data/constants.json");
   let path = "/";
 
   try {
