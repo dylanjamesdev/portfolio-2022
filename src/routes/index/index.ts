@@ -1,7 +1,8 @@
 import { Router, Request, Response } from "express";
+import axios from 'axios';
 
-let route = Router();
-let axios = require("axios");
+let route = Router(); 
+var constants = require("../../data/constants.json");
 
 route.get("/", async (_req: Request, res: Response) => {
   try {
@@ -20,7 +21,15 @@ route.get("/", async (_req: Request, res: Response) => {
       .filter((i) => !i.fork)
       .slice(0, 9);
 
-    let data = { repos };
+    
+    let obj = [];
+      
+    constants.comments.forEach(element => {
+      if (element.page == 'index') obj.push(element);
+    });
+    
+
+    let data = { repos: repos, comments: obj };
 
     return res.render("index", data);
   } catch {
