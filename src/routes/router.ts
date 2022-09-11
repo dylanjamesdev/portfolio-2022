@@ -4,12 +4,14 @@ import config from "../../config";
 import index from "./index";
 import webmaster from "./rants/webmaster";
 import words from "./rants/words";
+import apiComments from './api/createComment';
 
 let route = Router();
 
 route.use("/", index);
 route.use("/rants/webmaster", webmaster);
 route.use("/rants/words", words);
+route.use("/api/comments", apiComments);
 
 route.get("/:slug", (req: Request, res: Response) => {
   for (let i = 0; i < config.redirects.length; i++) {
