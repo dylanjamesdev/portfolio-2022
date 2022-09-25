@@ -14,7 +14,7 @@ const Projects = () => {
       setIsLoading(false);
     }
     fetchRepoData();
-  }, [repos]);
+  }, []);
 
   if (isLoading) {
     return (
@@ -34,11 +34,11 @@ const Projects = () => {
               <div className="text p-4 d-block">
                 <div className="meta mb-3">
                   <h3 className="heading">
-                    Fetching...
+                    Fetching Data
                     <br />
                     <br />
                     <p className="lead text-white">
-                      The client is currently fetching this data.
+                      The client is currently fetching data from the API.
                     </p>
                   </h3>
                 </div>
