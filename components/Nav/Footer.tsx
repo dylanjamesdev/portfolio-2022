@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <div className="animate__animated animate__fadeInUp mt-5 mb-5 text-center">
+    <div className="animate__animated animate__fadeInUp mt-5 mb-5 pt-5 text-center">
       <h6>
         <a className="base-color" href="https://github.com/dylanjamesdev">
           Dylan James

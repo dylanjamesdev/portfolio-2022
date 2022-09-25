@@ -1,6 +1,7 @@
 "use strict";
 
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Projects = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -8,9 +9,33 @@ const Projects = () => {
 
   useEffect(() => {
     async function fetchRepoData() {
-      const response = await fetch(`/api/v1/fetchRepos`);
-      const repos = await response.json();
-      setRepos(repos);
+      try {
+        let org_repos = await axios.get(
+          "https://api.github.com/orgs/team-tritan/repos"
+        );
+
+        let user_repos = await axios.get(
+          "https://api.github.com/users/dylanjamesdev/repos"
+        );
+
+        let repos = org_repos.data
+          .concat(user_repos.data)
+          .sort((a, b) => b.size - a.size)
+          .filter((i) => !i.fork)
+          .slice(0, 9);
+
+        setRepos(repos);
+      } catch (e: any) {
+        console.log(`[Fetch Error] /api/v1/fetchRepos: ${e.message}`);
+        let repos = [
+          {
+            name: "Fetch Error",
+            description: `A temporary api error has occurred while fetching the data. ${e.message}.`,
+          },
+        ];
+        setRepos(repos);
+      }
+
       setIsLoading(false);
     }
     fetchRepoData();
