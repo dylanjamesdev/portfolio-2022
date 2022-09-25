@@ -16,7 +16,7 @@ export default function Home() {
         <Projects />
         <Widgets />
         <Contact />
-        <CommentPanel url={"/"} />
+        <CommentPanel url={"index"} />
       </div>
     </body>
   );
