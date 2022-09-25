@@ -1,3 +1,5 @@
+"use strict";
+
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -29,7 +31,7 @@ export default function Document() {
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://dylanjames.gay" />
       <meta property="og:description" content="Just a little boring ole' cv" />
-      <link rel="icon" href="/av.jpg" />
+      <link rel="icon" href="/avatar.jpg" />
       <meta name="theme-color" content="#5c9dff"></meta>
       <Main />
       <NextScript />
