@@ -5,7 +5,7 @@ import Contact from "../components/Content/Home/Contact";
 import Hero from "../components/Content/Home/Hero";
 import Projects from "../components/Content/Home/Projects";
 import Widgets from "../components/Content/Home/Widgets";
-import Comments from "../components/Comments/Panel";
+import CommentPanel from "../components/Comments/Panel";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         <Projects />
         <Widgets />
         <Contact />
-        <Comments url={"/"} />
+        <CommentPanel url={"/"} />
       </div>
     </body>
   );
