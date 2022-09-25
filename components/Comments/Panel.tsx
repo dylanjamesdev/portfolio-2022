@@ -7,7 +7,9 @@ export default function CommentPanel({ url }) {
   let [comments, setComments] = useState(null); // to fetch
 
   async function postComment() {
-    // db api stuff
+    if (!comment.content) return;
+
+    console.log(comment);
   }
 
   useEffect(() => {
@@ -36,7 +38,13 @@ export default function CommentPanel({ url }) {
           id="comment"
           name="comment"
           onChange={(e) =>
-            setComment({ ...comment, url: url, content: e.target.value })
+            setComment({
+              ...comment,
+              url: url,
+              content: e.target.value,
+              time: new Date().toLocaleTimeString(),
+              date: new Date().toLocaleDateString(),
+            })
           }
           style={{ background: "transparent", color: "white" }}
         ></input>
