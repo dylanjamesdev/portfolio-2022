@@ -24,22 +24,12 @@ export default async function getRepos(
       .slice(0, 9);
 
     return res.json(repos);
-  } catch {
+  } catch (e: any) {
+    console.log(`[Fetch Error] /api/v1/fetchRepos: ${e.message}`);
     let repos = [
       {
         name: "Fetch Error",
-        description:
-          "A temporary api error has occurred while fetching the data.",
-      },
-      {
-        name: "Fetch Error",
-        description:
-          "A temporary api error has occurred while fetching the data.",
-      },
-      {
-        name: "Fetch Error",
-        description:
-          "A temporary api error has occurred while fetching the data.",
+        description: `A temporary api error has occurred while fetching the data. ${e.message}.`,
       },
     ];
 
