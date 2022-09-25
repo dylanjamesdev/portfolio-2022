@@ -1,6 +1,6 @@
 {
   "name": "dylanjames.gay",
-  "version": "2022",
+  "version": "0.2",
   "description": "A portfolio site made by yours truly, ported into nextjs.",
   "main": "server.js",
   "author": "Dylan James",
