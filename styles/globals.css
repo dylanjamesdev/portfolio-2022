@@ -33,6 +33,15 @@ body {
   position: relative;
 }
 
+.main {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.625em;
+  position: relative;
+}
+
 A:link {
   color: rgb(71, 71, 172);
   text-decoration: none;
