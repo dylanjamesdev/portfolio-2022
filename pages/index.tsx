@@ -1,17 +1,15 @@
 "use strict";
 
-import { useState } from "react";
 import AboutMe from "../components/Content/Home/AboutMe";
 import Contact from "../components/Content/Home/Contact";
 import Hero from "../components/Content/Home/Hero";
 import Projects from "../components/Content/Home/Projects";
 import Widgets from "../components/Content/Home/Widgets";
-import axios from "axios";
 
-const Home = ({ repos }) => {
+export default function Home() {
   return (
     <body style={{ backgroundColor: "black" }}>
-      <div className="container">
+      <div className="main container">
         <Hero />
         <AboutMe />
         <Projects />
@@ -20,6 +18,4 @@ const Home = ({ repos }) => {
       </div>
     </body>
   );
-};
-
-export default Home;
+}
