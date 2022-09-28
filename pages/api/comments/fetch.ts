@@ -4,10 +4,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import dataModel from "../../../db/dataModel";
 import initConnection from "../../../db/initConn";
 
-export default async function fetchComments(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+const fetchComments = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method == "GET") {
     initConnection();
 
@@ -24,4 +21,6 @@ export default async function fetchComments(
   } else {
     return res.json({ error: 401, message: "Method not allowed." });
   }
-}
+};
+
+export default fetchComments;

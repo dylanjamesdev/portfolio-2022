@@ -2,10 +2,15 @@
 
 import mongoose from "mongoose";
 
-export default async function initConnection() {
-  const conn = await mongoose
+const initConnection = async () => {
+  let conn = await mongoose
     .connect(process.env.MONGO_URI)
-    .catch((e) => console.error(e));
+    .then((i) => {})
+    .catch((e) => {
+      console.log(e);
+    });
 
   return conn;
-}
+};
+
+export default initConnection;

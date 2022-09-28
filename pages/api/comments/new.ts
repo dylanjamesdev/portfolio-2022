@@ -4,10 +4,7 @@ import { NextApiResponse, NextApiRequest } from "next";
 import dataModel from "../../../db/dataModel";
 import initConnection from "../../../db/initConn";
 
-export default async function NewComment(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+const newComment = (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method == "POST") {
     initConnection();
 
@@ -33,4 +30,6 @@ export default async function NewComment(
   } else {
     return res.json({ error: 401, message: "Method not allowed." });
   }
-}
+};
+
+export default newComment;

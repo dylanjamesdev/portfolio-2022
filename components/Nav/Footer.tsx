@@ -1,6 +1,6 @@
 "use strict";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <div className="animate__animated animate__fadeInUp mt-5 mb-5 pt-5 text-center">
       <h6>
@@ -65,4 +65,6 @@ export default function Footer() {
       </a>
     </div>
   );
-}
+};
+
+export default Footer;

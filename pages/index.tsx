@@ -7,7 +7,7 @@ import Projects from "../components/Content/Home/Projects";
 import Widgets from "../components/Content/Home/Widgets";
 import CommentPanel from "../components/Comments/Panel";
 
-export default function Home() {
+const Home = () => {
   return (
     <body style={{ backgroundColor: "black" }}>
       <div className="main container">
@@ -20,4 +20,6 @@ export default function Home() {
       </div>
     </body>
   );
-}
+};
+
+export default Home;

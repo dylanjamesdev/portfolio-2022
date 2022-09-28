@@ -4,7 +4,7 @@ import CommentPanel from "../../components/Comments/Panel";
 import Hero from "../../components/Content/Words/Hero";
 import Text from "../../components/Content/Words/Text";
 
-export default function WebmasterRant() {
+const Words = () => {
   return (
     <body style={{ backgroundColor: "black" }}>
       <div className="animate__animated animate__fadeInUp main container">
@@ -14,4 +14,6 @@ export default function WebmasterRant() {
       </div>
     </body>
   );
-}
+};
+
+export default Words;

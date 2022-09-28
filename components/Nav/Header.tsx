@@ -1,6 +1,6 @@
 "use strict";
 
-export default function () {
+const Header = () => {
   return (
     <>
       <header className="header-area overlay">
@@ -55,4 +55,6 @@ export default function () {
       </header>
     </>
   );
-}
+};
+
+export default Header;

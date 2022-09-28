@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "../components/Nav/Header";
 import Footer from "../components/Nav/Footer";
 
-function Portfolio({ Component, pageProps }) {
+const Portfolio = ({ Component, pageProps }) => {
   return (
     <>
       <Navbar />
@@ -14,6 +14,6 @@ function Portfolio({ Component, pageProps }) {
       <Footer />
     </>
   );
-}
+};
 
 export default Portfolio;
