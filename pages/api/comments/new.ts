@@ -2,12 +2,15 @@
 
 import { NextApiResponse, NextApiRequest } from "next";
 import dataModel from "../../../db/dataModel";
+import initConnection from "../../../db/initConn";
 
 export default async function NewComment(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   if (req.method == "POST") {
+    initConnection();
+
     let { content, time, date, url } = req.body;
 
     if (!content || !time || !date || !url) {

@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 import axios from "axios";
+import initConnection from "../../db/initConn";
 
 export default function CommentPanel({ url }) {
+  initConnection();
   let [comments, setComments] = useState(null);
   let [newComment, setNewComment] = useState(null);
 
