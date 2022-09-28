@@ -7,8 +7,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "../components/Nav/Navbar";
 import Footer from "../components/Nav/Footer";
 
-import ReactPlayer from "react-player";
-
 function Portfolio({ Component, pageProps }) {
   initConnection();
 
@@ -17,7 +15,6 @@ function Portfolio({ Component, pageProps }) {
       <Navbar />
       <Component {...pageProps} />
       <Footer />
-      <ReactPlayer url="https://www.youtube.com/playlist?list=PLe0sO1QaRc9rX_YCF6y6Nck5gshxz_DoI" />
     </>
   );
 }
