@@ -10,7 +10,13 @@ export default function MainAlert() {
       }}
       role="alert"
     >
-      If you read anything from my site, I suggest{"  "}<u><a href="/rants/webmaster" style={{ color: "white" }}>starting here</a>.</u>
+      If you read anything from my site, I suggest{"  "}
+      <u>
+        <a href="/rants/webmaster" style={{ color: "white" }}>
+          starting here
+        </a>
+        .
+      </u>
     </div>
   );
 }

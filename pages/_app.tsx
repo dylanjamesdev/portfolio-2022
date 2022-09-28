@@ -3,7 +3,7 @@
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-import Navbar from "../components/Nav/Navbar";
+import Navbar from "../components/Nav/Header";
 import Footer from "../components/Nav/Footer";
 
 function Portfolio({ Component, pageProps }) {
