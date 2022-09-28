@@ -11,9 +11,9 @@ export default function CommentPanel({ url }) {
     fetch(`/api/comments/fetch?url=${url}`)
       .then((response) => response.json())
       .then((data) => setComments(data));
-  }, [comments]);
+  }, [comments, setComments, url]);
 
-  async function postComment() {
+  const postComment = async () => {
     if (!newComment.content) return;
 
     await axios
@@ -29,7 +29,7 @@ export default function CommentPanel({ url }) {
 
     console.log(newComment);
     setNewComment({});
-  }
+  };
 
   if (comments == null) {
     return (

@@ -1,15 +1,12 @@
 "use strict";
 
 import { NextApiResponse, NextApiRequest } from "next";
-import initConnection from "../../../db/initConn";
 import dataModel from "../../../db/dataModel";
 
 export default async function NewComment(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  initConnection();
-
   if (req.method == "POST") {
     let { content, time, date, url } = req.body;
 
