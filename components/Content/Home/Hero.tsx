@@ -27,7 +27,7 @@ export default function HomeHero() {
           </div>
         </div>
         <div className="animate__animated animate__fadeInUp col-lg-4 text-center my-auto pb-5 rounded-circle">
-          <img className="img-fluid rounded-circle" src="/avatar.jpg" />
+          <img className="img-fluid rounded-circle" src="/avatar.webp" />
         </div>
       </div>
     </section>
