@@ -31,7 +31,7 @@ const Document = () => {
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://dylanjames.gay" />
       <meta property="og:description" content="Just a little boring ole' cv" />
-      <link rel="icon" href="/avatar.jpg" />
+      <link rel="icon" href="/avatar.webp" />
       <meta name="theme-color" content="#5c9dff"></meta>
       <Main />
       <NextScript />
